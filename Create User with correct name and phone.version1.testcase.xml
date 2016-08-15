@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testcases>
+<testcase internalid="44" name="Create User with correct name and phone">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create User with correct name and phone</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	&quot;Фамилия Имя&quot; -&nbsp;no conditions.</p>
+<p>
+	&quot;Телефон&quot; -&nbsp;number is unique; numeric field; integers; min - 2 symbols and&nbsp;max - 14 symbols.</p>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Open the index. html on your desktop.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Оpen file: /// C: /Users/Marta/Desktop/Client/Client/index.html in the browser window.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Push button &quot;+&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	You get the &quot;Создание пользователя&quot; with empty fields &quot;Фамилия Имя&quot; and &quot;Телефон&quot;. End list &quot;Роль&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Еnter in the &quot;Фамилия Имя&quot; any letter.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The entered letters are displayed in the &quot;Фамилия Имя&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Enter in the &quot;Телефон&quot; symbols according to the conditions.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The entered symbols are displayed in the &quot;Телефон&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Select from list &quot;Роль&quot; user status.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The status are displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Push button &quot;Создать&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	New user is added and is displayed with the entered data.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testcases>
